@@ -13,7 +13,7 @@ See the [PFF FC API Documentation](https://fc.pff.com/docs). This documentation 
 ## Installation
 Use your unique PFF FC API key or request an API key to PFF FC’s free-forever Sandbox environment by emailing fchelp@pff.com.
 ```
-pip install git+https://github.com/pro-football-focus/pypff.git
+devtools::install_github("pro-football-focus/rpff")
 ```
 
 ## API Sandbox Environment

@@ -24,54 +24,54 @@ After successfully installing the package, import it:
 ```
 library(RPFF)
 ```
-Make sure to set your environment variables to the url and key that your are provided with.
+Make sure to set your environment variables to the URL and key that your are provided with.
 ```
-Sys.setenv("pff-api-url" = "https://faraday.pff.com/api")
-Sys.setenv("x-api-key" = "XXXXXXXXXX")
+Sys.setenv("pff-api-url" = "<<provided URL>>")
+Sys.setenv("x-api-key" = "<<provided key>>")
 ```
 In order to retrieve all leagues available to you, run:
 ```
-pff.get_leagues(url, key)
+get_leagues()
 ```
 Or alternatively, request a specific league only:
 ```
-pff.get_league(url, key, league_id = 1)
+get_league(id = 1)
 ```
 In order to retrieve all teams available to you, run:
 ```
-pff.get_teams(url, key)
+get_teams()
 ```
 Or alternatively, request a specific team only:
 ```
-pff.get_team(url, key, team_id = 1)
+get_team(id = 1)
 ```
 In order to retrieve all games from a specific league, run:
 ```
-pff.get_games(url, key, league_id = 1)
+get_games(league_id = 1)
 ```
 Or alternatively, request a specific game only:
 ```
-pff.get_game(url, key, game_id = 1381)
+get_game(id = 1381)
 ```
 In order to retrieve all players available to you, run:
 ```
-pff.get_players(url, key)
+get_players()
 ```
 Or alternatively, request a specific player only:
 ```
-pff.get_player(url, key, player_id = 1)
+get_player(id = 1)
 ```
 In order to retrieve the roster of a specific game, run:
 ```
-pff.get_roster(url, key, game_id = 1381)
+get_roster(game_id = 1381)
 ```
 In order to retrieve all events of a specific game, run:
 ```
-pff.get_game_events(url, key, game_id = 1381)
+get_gameEvents(game_id = 1381)
 ```
 Or alternatively, request a specific event only:
 ```
-pff.get_game_event(url, key, game_event_id = 1820408)
+get_gameEvent(id = 1820408)
 ```
 
 ## GraphQL Resources

@@ -22,7 +22,12 @@ devtools::install_github("pro-football-focus/rpff")
 ## Usage
 After successfully installing the package, import it:
 ```
-from pypff import pff
+library(RPFF)
+```
+Make sure to set your environment variables to the url and key that your are provided with.
+```
+Sys.setenv("pff-api-url" = "https://faraday.pff.com/api")
+Sys.setenv("x-api-key" = "XXXXXXXXXX")
 ```
 In order to retrieve all leagues available to you, run:
 ```

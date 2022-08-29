@@ -1,9 +1,10 @@
-
-
-########################
-# Function get_leagues
-#######################
-
+#' Get All Leagues Function
+#'
+#' This function allows you to get all leagues you currently have access to.
+#' @keywords Leagues
+#' @export
+#' @examples
+#' get_leagues()
 get_leagues <- function() {
 
 query <- '

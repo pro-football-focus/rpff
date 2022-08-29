@@ -1,17 +1,23 @@
 
-# Package names
-packages <- c("httr", "jsonlite",'Matrix',"data.table")
+## Package names
+#packages <- c("httr", "jsonlite",'Matrix',"data.table")
 
-# Install packages not yet installed
-installed_packages <- packages %in% rownames(installed.packages())
-if (any(installed_packages == FALSE)) {
-  install.packages(packages[!installed_packages])
-}
+## Install packages not yet installed
+#installed_packages <- packages %in% rownames(installed.packages())
+#if (any(installed_packages == FALSE)) {
+#  install.packages(packages[!installed_packages])
+#}
 
-# Packages loading
-invisible(lapply(packages, library, character.only = TRUE))
+## Packages loading
+#invisible(lapply(packages, library, character.only = TRUE))
 
-
+#' GrahpQL Function
+#'
+#' This function sets the GraphQL paramaters for you.
+#' @keywords graphql
+#' @export
+#' @examples
+#' GQL()
 GQL <- function(query,
                 variables = NULL
                ){
@@ -38,5 +44,3 @@ GQL <- function(query,
 
   return(data_raw)
 }
-
-

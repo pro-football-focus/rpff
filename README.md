@@ -1,2 +1,2 @@
-# rpff
- PFF FC is a technology company that builds data &amp; analytics infrastructure for the world’s highest-performing teams. 
+# RPFF
+The [PFF FC](http://fc.pff.com/) R library provides convenient access to the PFF FC API from applications written in R.

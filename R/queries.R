@@ -26,7 +26,7 @@ query leagues {
 #'
 #' This function allows you to get league information for a given league_id.
 #' @export
-#' get_league(id)
+
 get_league <- function(id) {
 
 query <- '
@@ -56,7 +56,7 @@ return(df)
 #'
 #' This function allows you to get all teams you currently have access to.
 #' @export
-#' get_teams()
+
 get_teams <- function() {
 
   query <- '
@@ -84,7 +84,7 @@ return(df)
 #'
 #' This function allows you to get team information for a given team_id.
 #' @export
-#' get_team(id)
+
 get_team <- function(id) {
 
 query <- '
@@ -119,7 +119,7 @@ return(df)
 #'
 #' This function allows you to get game information for a given league_id.
 #' @export
-#' get_games(league_id)
+
 get_games <- function(league_id) {
 
   query <- '
@@ -183,7 +183,7 @@ return(df)
 #'
 #' This function allows you to get game information for a given game_id.
 #' @export
-#' get_game(id)
+
 get_game <- function(id) {
 
   query <- '
@@ -247,7 +247,7 @@ return(df)
 #'
 #' This function allows you to get all players you currently have access to.
 #' @export
-#' get_players()
+
 get_players <- function() {
 
   query <- '
@@ -293,7 +293,7 @@ return(df)
 #'
 #' This function allows you to get player information for a given player_id.
 #' @export
-#' get_player(id)
+
 get_player <- function(id) {
 
   query <- '
@@ -345,7 +345,7 @@ return(df)
 #'
 #' This function allows you to get roster information for a given game_id.
 #' @export
-#' get_roster(game_id)
+
 get_roster <- function(game_id) {
 
   query <- '
@@ -382,7 +382,7 @@ return(df)
 #'
 #' This function allows you to get all events for a given game_id.
 #' @export
-#' get_gameEvents(game_id)
+
 get_gameEvents <- function(game_id) {
 
   query <- '
@@ -950,7 +950,6 @@ return(df)
 #'
 #' This function allows you to get an event for a given game_event_id.
 #' @export
-#' get_gameEvent(id)
 
 get_gameEvent <- function(id) {
 

@@ -14,7 +14,7 @@
 #'
 #' This function sets the GraphQL paramaters for you.
 #' @export
-#' GQL()
+
 GQL <- function(query,
                 variables = NULL
                ){

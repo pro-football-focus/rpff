@@ -2,7 +2,7 @@
 #'
 #' This function allows you to get all leagues you currently have access to.
 #' @export
-#' get_leagues()
+
 get_leagues <- function() {
 
 query <- '

@@ -15,6 +15,8 @@ PFF FC offers a Sandbox environment which provides convenient access to one leag
 
 ## Installation
 Use your unique PFF FC API key or request an API key to PFF FC’s free-forever Sandbox environment by emailing fchelp@pff.com.
+
+Installing RPFF requires `devtools`, if not yet installend, run `install.packages("devtools")`
 ```
 devtools::install_github("pro-football-focus/rpff")
 ```

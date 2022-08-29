@@ -9,7 +9,3 @@ GQL(query, variables = NULL)
 \description{
 This function sets the GraphQL paramaters for you.
 }
-\examples{
-GQL()
-}
-\keyword{graphql}

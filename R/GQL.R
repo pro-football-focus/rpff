@@ -1,4 +1,3 @@
-
 ## Package names
 #packages <- c("httr", "jsonlite",'Matrix',"data.table")
 
@@ -14,9 +13,7 @@
 #' GrahpQL Function
 #'
 #' This function sets the GraphQL paramaters for you.
-#' @keywords graphql
 #' @export
-#' @examples
 #' GQL()
 GQL <- function(query,
                 variables = NULL

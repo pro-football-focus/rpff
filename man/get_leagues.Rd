@@ -9,7 +9,3 @@ get_leagues()
 \description{
 This function allows you to get all leagues you currently have access to.
 }
-\examples{
-get_leagues()
-}
-\keyword{Leagues}

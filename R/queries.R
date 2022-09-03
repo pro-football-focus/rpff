@@ -390,6 +390,7 @@ query game ($id: ID!) {
     game (id: $id) {
         id
         gameEvents {
+            id
             advantageType
             bodyType
             duration
@@ -956,6 +957,7 @@ get_gameEvent <- function(id) {
   query <- '
 query gameEvent ($id: ID!) {
     gameEvent (id: $id) {
+        id
         advantageType
         bodyType
         duration

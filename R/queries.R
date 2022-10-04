@@ -1511,7 +1511,7 @@ query gameEvent ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',id,'
+    "id":',game_event_id,'
 }
 ')
 

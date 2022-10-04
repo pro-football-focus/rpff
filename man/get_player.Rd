@@ -4,7 +4,7 @@
 \alias{get_player}
 \title{Get Player Function}
 \usage{
-get_player(id)
+get_player(player_id)
 }
 \description{
 This function allows you to get player information for a given player_id.

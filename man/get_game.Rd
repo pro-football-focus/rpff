@@ -4,7 +4,7 @@
 \alias{get_game}
 \title{Get Game Function}
 \usage{
-get_game(id)
+get_game(game_id)
 }
 \description{
 This function allows you to get game information for a given game_id.

@@ -27,7 +27,7 @@ query leagues {
 #' This function allows you to get league information for a given league_id.
 #' @export
 
-get_league <- function(id) {
+get_league <- function(league_id) {
 
 query <- '
 query league ($id: ID!) {
@@ -44,7 +44,7 @@ query league ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',id,'
+    "id":',league_id,'
 }
 ')
 
@@ -85,7 +85,7 @@ return(df)
 #' This function allows you to get team information for a given team_id.
 #' @export
 
-get_team <- function(id) {
+get_team <- function(team_id) {
 
 query <- '
 query team ($id: ID!) {
@@ -106,7 +106,7 @@ query team ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',id,'
+    "id":',team_id,'
 }
 ')
 
@@ -184,7 +184,7 @@ return(df)
 #' This function allows you to get game information for a given game_id.
 #' @export
 
-get_game <- function(id) {
+get_game <- function(game_id) {
 
   query <- '
 query game ($id: ID!) {
@@ -235,7 +235,7 @@ query game ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',id,'
+    "id":',game_id,'
 }
 ')
 
@@ -300,7 +300,7 @@ return(df)
 #' This function allows you to get player information for a given player_id.
 #' @export
 
-get_player <- function(id) {
+get_player <- function(player_id) {
 
   query <- '
 query player ($id: ID!) {
@@ -339,7 +339,7 @@ query player ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',id,'
+    "id":',player_id,'
 }
 ')
 
@@ -958,7 +958,7 @@ return(df)
 #' This function allows you to get an event for a given game_event_id.
 #' @export
 
-get_gameEvent <- function(id) {
+get_gameEvent <- function(game_event_id) {
 
   query <- '
 query gameEvent ($id: ID!) {

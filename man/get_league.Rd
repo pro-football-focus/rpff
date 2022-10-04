@@ -4,7 +4,7 @@
 \alias{get_league}
 \title{Get League Function}
 \usage{
-get_league(id)
+get_league(league_id)
 }
 \description{
 This function allows you to get league information for a given league_id.

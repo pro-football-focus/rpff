@@ -4,7 +4,7 @@
 \alias{get_team}
 \title{Get Team Function}
 \usage{
-get_team(id)
+get_team(team_id)
 }
 \description{
 This function allows you to get team information for a given team_id.

@@ -4,7 +4,7 @@
 \alias{get_gameEvent}
 \title{Get Event Function}
 \usage{
-get_gameEvent(id)
+get_gameEvent(game_event_id)
 }
 \description{
 This function allows you to get an event for a given game_event_id.

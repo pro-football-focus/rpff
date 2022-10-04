@@ -37,7 +37,7 @@ get_leagues()
 ```
 Or alternatively, request a specific league only:
 ```
-get_league(id = 1)
+get_league(league_id)
 ```
 In order to retrieve all teams available to you, run:
 ```
@@ -45,35 +45,35 @@ get_teams()
 ```
 Or alternatively, request a specific team only:
 ```
-get_team(id = 1)
+get_team(team_id)
 ```
 In order to retrieve all games from a specific league, run:
 ```
-get_games(league_id = 1)
+get_games(league_id)
 ```
 Or alternatively, request a specific game only:
 ```
-get_game(id = 1381)
+get_game(game_id)
 ```
-In order to retrieve all players available to you, run:
+In order to retrieve all players from a specific league, run:
 ```
-get_players()
+get_players_league(league_id)
 ```
 Or alternatively, request a specific player only:
 ```
-get_player(id = 1)
+get_player(player_id)
 ```
 In order to retrieve the roster of a specific game, run:
 ```
-get_roster(game_id = 1381)
+get_roster(game_id)
 ```
 In order to retrieve all events of a specific game, run:
 ```
-get_gameEvents(game_id = 1381)
+get_gameEvents(game_id)
 ```
 Or alternatively, request a specific event only:
 ```
-get_gameEvent(id = 1820408)
+get_gameEvent(game_event_id)
 ```
 
 ## GraphQL Resources

@@ -245,47 +245,53 @@ return(df)
 
 #' Get Players Function
 #'
-#' This function allows you to get all players you currently have access to.
+#' This function allows you to get all players from a specific league.
 #' @export
 
-get_players <- function() {
+get_players_league <- function(league_id) {
 
   query <- '
-query players {
-    players {
-        id
-        firstName
-        lastName
-        nickname
-        positionGroupType
-        nationality {
-            id
-            country
-        }
-        secondNationality {
-            id
-            country
-        }
-        weight
-        height
-        dob
-        gender
-        countryOfBirth {
-            id
-            country
-        }
-        euMember
-        rosters {
-            game {
-                id
+query league ($id: ID!) {
+    league (id: $id) {
+        games {
+            rosters {
+                player {
+                    id
+                    firstName
+                    lastName
+                    nickname
+                    positionGroupType
+                    nationality {
+                        id
+                        country
+                    }
+                    secondNationality {
+                        id
+                        country
+                    }
+                    weight
+                    height
+                    dob
+                    gender
+                    countryOfBirth {
+                        id
+                        country
+                    }
+                    euMember
+                }
             }
-            started
         }
     }
 }
 '
 
-df = as.data.frame(GQL(query))
+variables <- paste('
+{
+    "id":',league_id,'
+}
+')
+
+df = GQL(query,variables)
 return(df)
 }
 

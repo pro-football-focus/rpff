@@ -4,8 +4,8 @@
 \alias{get_games}
 \title{Get Games Function}
 \usage{
-get_games(league_id)
+get_games(competition_id)
 }
 \description{
-This function allows you to get game information for a given league_id.
+This function allows you to get game information for a given competition_id.
 }

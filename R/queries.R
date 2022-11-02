@@ -1,13 +1,13 @@
-#' Get All Leagues Function
+#' Get All competitions Function
 #'
-#' This function allows you to get all leagues you currently have access to.
+#' This function allows you to get all competitions you currently have access to.
 #' @export
 
-get_leagues <- function() {
+get_competitions <- function() {
 
 query <- '
-query leagues {
-    leagues {
+query competitions {
+    competitions {
         id
         name
         games {
@@ -22,16 +22,16 @@ query leagues {
   return(df)
 }
 
-#' Get League Function
+#' Get competition Function
 #'
-#' This function allows you to get league information for a given league_id.
+#' This function allows you to get competition information for a given competition_id.
 #' @export
 
-get_league <- function(league_id) {
+get_competition <- function(competition_id) {
 
 query <- '
-query league ($id: ID!) {
-    league (id: $id) {
+query competition ($id: ID!) {
+    competition (id: $id) {
         id
         name
         games {
@@ -44,7 +44,7 @@ query league ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',league_id,'
+    "id":',competition_id,'
 }
 ')
 
@@ -117,14 +117,14 @@ return(df)
 
 #' Get Games Function
 #'
-#' This function allows you to get game information for a given league_id.
+#' This function allows you to get game information for a given competition_id.
 #' @export
 
-get_games <- function(league_id) {
+get_games <- function(competition_id) {
 
   query <- '
-query league ($id: ID!) {
-    league (id: $id) {
+query competition ($id: ID!) {
+    competition (id: $id) {
         id
         name
         games {
@@ -171,7 +171,7 @@ query league ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',league_id,'
+    "id":',competition_id,'
 }
 ')
 
@@ -190,7 +190,7 @@ get_game <- function(game_id) {
 query game ($id: ID!) {
     game (id: $id) {
         id
-        league {
+        competition {
             id
             name
         }
@@ -245,14 +245,14 @@ return(df)
 
 #' Get Players Function
 #'
-#' This function allows you to get all players from a specific league.
+#' This function allows you to get all players from a specific competition.
 #' @export
 
-get_players_league <- function(league_id) {
+get_players_competition <- function(competition_id) {
 
   query <- '
-query league ($id: ID!) {
-    league (id: $id) {
+query competition ($id: ID!) {
+    competition (id: $id) {
         games {
             rosters {
                 player {
@@ -287,7 +287,7 @@ query league ($id: ID!) {
 
 variables <- paste('
 {
-    "id":',league_id,'
+    "id":',competition_id,'
 }
 ')
 

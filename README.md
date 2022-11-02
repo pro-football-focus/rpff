@@ -31,13 +31,13 @@ Make sure to set your environment variables to the URL and key that your are pro
 Sys.setenv("pff-api-url" = "<<provided URL>>")
 Sys.setenv("x-api-key" = "<<provided key>>")
 ```
-In order to retrieve all leagues available to you, run:
+In order to retrieve all competitions available to you, run:
 ```
-get_leagues()
+get_competitions()
 ```
-Or alternatively, request a specific league only:
+Or alternatively, request a specific competition only:
 ```
-get_league(league_id)
+get_competition(competition_id)
 ```
 In order to retrieve all teams available to you, run:
 ```
@@ -47,17 +47,17 @@ Or alternatively, request a specific team only:
 ```
 get_team(team_id)
 ```
-In order to retrieve all games from a specific league, run:
+In order to retrieve all games from a specific competition, run:
 ```
-get_games(league_id)
+get_games(competition_id)
 ```
 Or alternatively, request a specific game only:
 ```
 get_game(game_id)
 ```
-In order to retrieve all players from a specific league, run:
+In order to retrieve all players from a specific competition, run:
 ```
-get_players_league(league_id)
+get_players_competition(competition_id)
 ```
 Or alternatively, request a specific player only:
 ```
